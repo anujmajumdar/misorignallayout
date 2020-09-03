@@ -1,0 +1,238 @@
+.app {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f5f6fa;
+    padding: 20px;
+  }
+
+
+.body {
+    background-color: lightgray;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background-color: rgb(29, 173, 230);
+    padding: 1rem;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: solid 5px rgb(48, 48, 48);
+   
+  box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+}
+
+.header:hover {
+    scale: 1.001;
+    transition-duration: 0.2s;
+}
+
+.header > h1 {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 40px !important;
+    margin-bottom: 100px !important;
+    
+}
+
+.header > button {
+    
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: rgb(31, 143, 187);
+    box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+    width: 150px;
+    color: white;
+    font-size: medium;
+    border: solid 2px rgb(48, 48, 48);
+
+
+}
+
+.header > button:hover {
+    scale: 1.01;
+    transition-duration: 0.3s;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.inputs > form > input {
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+    width: 150px;
+    color: black;
+    font-size: medium;
+    border: solid 2px rgb(48, 48, 48);
+}
+
+.outputs {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.outputs__types {
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+    width: 200px;
+    color: black;
+    font-size: large;
+    border: solid 2px rgb(48, 48, 48);
+}
+
+.threeTables {
+    display: flex;
+    padding: 10px;
+}
+
+.threeTables__opdipd {
+    display: flex;
+    flex: 0.4;
+    margin-top: 20px;
+    margin-left: 10px;
+    overflow: scroll;
+    background-color: white;
+    height: 400px;
+    border-radius: 10px;
+    border: solid 3px black;
+    border-bottom: solid 4px black;
+}
+}
+
+
+
+  
+.threeTables__opdipd  tr {
+    display: flex;
+
+}
+  
+.threeTables__opdipd  td {
+    padding: 0.5rem;
+    border: 1px solid black;
+    column-span: all;
+
+}
+  
+.threeTables__opdipd  tr:nth-of-type(odd) {
+    background-color: #bbbbbb;
+}
+
+.threeTables__outstanding {
+    display: flex;
+    flex: 0.2;
+    margin-top: 20px;
+    margin-left: 10px;
+    overflow: scroll;
+    background-color: white;
+    height: 400px;
+    border-radius: 10px;
+    border: solid 3px black;
+    border-bottom: solid 4px black;
+}
+}
+  
+.threeTables__outstanding tr {
+    display: flex;
+    justify-content: center;
+
+}
+  
+.threeTables__outstanding td {
+    padding: 0.5rem;
+    column-span: all;
+    border: 1px solid black;
+    
+}
+  
+.threeTables__outstanding tr:nth-of-type(odd) {
+    background-color: #dddddd;
+}
+
+.twoTables {
+    display: flex;
+    padding: 10px;
+}
+
+.twoTables__options {
+    display: flex;
+    flex: 0.33;
+    margin-top: 20px;
+    margin-right: 10px;
+    overflow: scroll;
+    background-color: white;
+    height: 400px;
+    border-radius: 10px;
+    border: solid 3px black;
+    border-bottom: solid 4px black;
+}
+
+.twoTables__options tr:nth-of-type(odd) {
+    background-color: rgb(31, 143, 187);
+    color: white;
+}
+
+  
+.twoTables__options tr {
+    padding: 0.5rem;
+    border: none;
+    column-span: all;
+
+}
+  
+.twoTables__options td {
+    padding: 0.5rem;
+    column-span: all;
+    border: 1px solid black;
+
+}
+
+.twoTables__details {
+    display: flex;
+    flex: 0.67;
+    margin-top: 20px;
+    margin-left: 10px;
+    overflow: scroll;
+
+    background-color: white;
+    height: 400px;
+    border-radius: 10px;
+    border: solid 3px black;
+    border-bottom: solid 4px black;
+}
+
+
+
+  
+.twoTables__details tr {
+    padding: 0.5rem;
+    border: none;
+
+}
+  
+.twoTables__details td {
+    padding: 0.5rem;
+    column-span: all;
+    border: 1px solid black;
+
+}
+
+.twoTables__options td:hover {
+    scale: 1.01;
+    transition-duration: 0.3s;
+}
+
+@media (max-width: 990px) {
+    .body {
+      flex-direction: column;
+    }
+  }
+  
